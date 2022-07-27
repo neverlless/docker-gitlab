@@ -1,1 +1,1 @@
-# docker-gitlab
+# docker-compose GitLab

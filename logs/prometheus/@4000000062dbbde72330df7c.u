@@ -1,0 +1,79 @@
+2022-07-22_14:05:09.84667 level=info ts=2022-07-22T14:05:09.846Z caller=main.go:400 msg="No time or size retention was set so using the default time retention" duration=15d
+2022-07-22_14:05:09.84803 level=info ts=2022-07-22T14:05:09.847Z caller=main.go:438 msg="Starting Prometheus" version="(version=2.30.4, branch=master, revision=)"
+2022-07-22_14:05:09.84857 level=info ts=2022-07-22T14:05:09.848Z caller=main.go:443 build_context="(go=go1.17.6, user=GitLab-Omnibus, date=)"
+2022-07-22_14:05:09.84865 level=info ts=2022-07-22T14:05:09.848Z caller=main.go:444 host_details="(Linux 5.4.0-122-generic #138-Ubuntu SMP Wed Jun 22 15:00:31 UTC 2022 x86_64 gitlab.sl.local (none))"
+2022-07-22_14:05:09.84872 level=info ts=2022-07-22T14:05:09.848Z caller=main.go:445 fd_limits="(soft=50000, hard=50000)"
+2022-07-22_14:05:09.84878 level=info ts=2022-07-22T14:05:09.848Z caller=main.go:446 vm_limits="(soft=unlimited, hard=unlimited)"
+2022-07-22_14:05:09.85216 level=info ts=2022-07-22T14:05:09.852Z caller=web.go:541 component=web msg="Start listening for connections" address=localhost:9090
+2022-07-22_14:05:09.85299 level=info ts=2022-07-22T14:05:09.852Z caller=main.go:822 msg="Starting TSDB ..."
+2022-07-22_14:05:09.86062 level=info ts=2022-07-22T14:05:09.860Z caller=tls_config.go:191 component=web msg="TLS is disabled." http2=false
+2022-07-22_14:05:09.87135 level=info ts=2022-07-22T14:05:09.871Z caller=head.go:481 component=tsdb msg="Replaying on-disk memory mappable chunks if any"
+2022-07-22_14:05:09.92669 level=info ts=2022-07-22T14:05:09.926Z caller=head.go:515 component=tsdb msg="On-disk memory mappable chunks replay completed" duration=55.265518ms
+2022-07-22_14:05:09.92671 level=info ts=2022-07-22T14:05:09.926Z caller=head.go:521 component=tsdb msg="Replaying WAL, this may take a while"
+2022-07-22_14:05:10.42870 level=info ts=2022-07-22T14:05:10.428Z caller=head.go:592 component=tsdb msg="WAL segment loaded" segment=0 maxSegment=4
+2022-07-22_14:05:10.93258 level=info ts=2022-07-22T14:05:10.932Z caller=head.go:592 component=tsdb msg="WAL segment loaded" segment=1 maxSegment=4
+2022-07-22_14:05:11.64831 level=info ts=2022-07-22T14:05:11.648Z caller=head.go:592 component=tsdb msg="WAL segment loaded" segment=2 maxSegment=4
+2022-07-22_14:05:12.37537 level=info ts=2022-07-22T14:05:12.375Z caller=head.go:592 component=tsdb msg="WAL segment loaded" segment=3 maxSegment=4
+2022-07-22_14:05:12.37745 level=info ts=2022-07-22T14:05:12.377Z caller=head.go:592 component=tsdb msg="WAL segment loaded" segment=4 maxSegment=4
+2022-07-22_14:05:12.37751 level=info ts=2022-07-22T14:05:12.377Z caller=head.go:598 component=tsdb msg="WAL replay completed" checkpoint_replay_duration=131.437µs wal_replay_duration=2.450660747s total_replay_duration=2.506138019s
+2022-07-22_14:05:12.47272 level=info ts=2022-07-22T14:05:12.472Z caller=main.go:849 fs_type=EXT4_SUPER_MAGIC
+2022-07-22_14:05:12.47281 level=info ts=2022-07-22T14:05:12.472Z caller=main.go:852 msg="TSDB started"
+2022-07-22_14:05:12.47286 level=info ts=2022-07-22T14:05:12.472Z caller=main.go:979 msg="Loading configuration file" filename=/var/opt/gitlab/prometheus/prometheus.yml
+2022-07-22_14:05:12.47422 level=error ts=2022-07-22T14:05:12.474Z caller=manager.go:316 component="discovery manager scrape" msg="Cannot create service discovery" err="unable to load specified CA cert /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: open /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: no such file or directory" type=kubernetes
+2022-07-22_14:05:12.47523 level=error ts=2022-07-22T14:05:12.475Z caller=manager.go:316 component="discovery manager scrape" msg="Cannot create service discovery" err="unable to load specified CA cert /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: open /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: no such file or directory" type=kubernetes
+2022-07-22_14:05:12.47534 level=error ts=2022-07-22T14:05:12.475Z caller=manager.go:316 component="discovery manager scrape" msg="Cannot create service discovery" err="unable to load specified CA cert /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: open /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: no such file or directory" type=kubernetes
+2022-07-22_14:05:12.50017 level=info ts=2022-07-22T14:05:12.500Z caller=main.go:1016 msg="Completed loading of configuration file" filename=/var/opt/gitlab/prometheus/prometheus.yml totalDuration=27.248121ms db_storage=1.862µs remote_storage=8.934µs web_handler=1.649µs query_engine=1.871µs scrape=76.038µs scrape_sd=1.839122ms notify=125.335µs notify_sd=13.606µs rules=24.065064ms
+2022-07-22_14:05:12.50025 level=info ts=2022-07-22T14:05:12.500Z caller=main.go:794 msg="Server is ready to receive web requests."
+2022-07-22_14:05:17.50259 level=error ts=2022-07-22T14:05:17.501Z caller=manager.go:196 component="scrape manager" msg="error creating new scrape pool" err="error creating HTTP client: unable to load specified CA cert /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: open /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: no such file or directory" scrape_pool=kubernetes-pods
+2022-07-22_14:05:17.50261 level=error ts=2022-07-22T14:05:17.501Z caller=manager.go:196 component="scrape manager" msg="error creating new scrape pool" err="error creating HTTP client: unable to load specified CA cert /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: open /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: no such file or directory" scrape_pool=kubernetes-nodes
+2022-07-22_14:05:17.50262 level=error ts=2022-07-22T14:05:17.501Z caller=manager.go:196 component="scrape manager" msg="error creating new scrape pool" err="error creating HTTP client: unable to load specified CA cert /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: open /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: no such file or directory" scrape_pool=kubernetes-cadvisor
+2022-07-22_15:59:09.37534 level=info ts=2022-07-22T15:59:09.374Z caller=compact.go:518 component=tsdb msg="write block" mint=1658494748976 maxt=1658498400000 ulid=01G8KA4N5RB8N5DSNXJCGHMMQ3 duration=390.010473ms
+2022-07-22_15:59:09.40053 level=info ts=2022-07-22T15:59:09.400Z caller=head.go:800 component=tsdb msg="Head GC completed" duration=22.443803ms
+2022-07-22_15:59:09.43363 level=info ts=2022-07-22T15:59:09.433Z caller=checkpoint.go:97 component=tsdb msg="Creating checkpoint" from_segment=0 to_segment=2 mint=1658498400000
+2022-07-22_15:59:09.65478 level=info ts=2022-07-22T15:59:09.654Z caller=head.go:969 component=tsdb msg="WAL checkpoint complete" first=0 last=2 duration=221.421093ms
+2022-07-22_17:05:20.01967 level=info ts=2022-07-22T17:05:20.019Z caller=compact.go:518 component=tsdb msg="write block" mint=1658498719256 maxt=1658505600000 ulid=01G8KDXTDZM3W61JY67VH0EHTS duration=723.640679ms
+2022-07-22_17:05:20.04873 level=info ts=2022-07-22T17:05:20.048Z caller=head.go:800 component=tsdb msg="Head GC completed" duration=26.668014ms
+2022-07-22_19:00:01.25802 level=info ts=2022-07-22T19:00:01.257Z caller=compact.go:518 component=tsdb msg="write block" mint=1658505600319 maxt=1658512800000 ulid=01G8KMFTGQSBC4C5MFPSSBDEZT duration=594.510576ms
+2022-07-22_19:00:01.29157 level=info ts=2022-07-22T19:00:01.287Z caller=head.go:800 component=tsdb msg="Head GC completed" duration=25.658394ms
+2022-07-22_19:00:01.32179 level=info ts=2022-07-22T19:00:01.321Z caller=checkpoint.go:97 component=tsdb msg="Creating checkpoint" from_segment=3 to_segment=4 mint=1658512800000
+2022-07-22_19:00:01.84021 level=info ts=2022-07-22T19:00:01.840Z caller=head.go:969 component=tsdb msg="WAL checkpoint complete" first=3 last=4 duration=518.732759ms
+2022-07-22_21:00:01.62452 level=info ts=2022-07-22T21:00:01.624Z caller=compact.go:518 component=tsdb msg="write block" mint=1658512800319 maxt=1658520000000 ulid=01G8KVBHRQY9QREMXJ756BFMW9 duration=961.148745ms
+2022-07-22_21:00:01.66723 level=info ts=2022-07-22T21:00:01.667Z caller=head.go:800 component=tsdb msg="Head GC completed" duration=35.474208ms
+2022-07-22_23:00:01.36140 level=info ts=2022-07-22T23:00:01.361Z caller=compact.go:518 component=tsdb msg="write block" mint=1658520000319 maxt=1658527200000 ulid=01G8M2790QTYXKVJBSBWTX4E24 duration=697.601167ms
+2022-07-22_23:00:01.38562 level=info ts=2022-07-22T23:00:01.385Z caller=head.go:800 component=tsdb msg="Head GC completed" duration=19.865852ms
+2022-07-22_23:00:01.43268 level=info ts=2022-07-22T23:00:01.432Z caller=checkpoint.go:97 component=tsdb msg="Creating checkpoint" from_segment=5 to_segment=6 mint=1658527200000
+2022-07-22_23:00:02.09819 level=info ts=2022-07-22T23:00:02.098Z caller=head.go:969 component=tsdb msg="WAL checkpoint complete" first=5 last=6 duration=665.776908ms
+2022-07-22_23:00:02.93145 level=info ts=2022-07-22T23:00:02.931Z caller=compact.go:459 component=tsdb msg="compact blocks" count=3 mint=1658494748976 maxt=1658512800000 ulid=01G8M27ADJKZXK6J6B1WXDPDHT sources="[01G8KA4N5RB8N5DSNXJCGHMMQ3 01G8KDXTDZM3W61JY67VH0EHTS 01G8KMFTGQSBC4C5MFPSSBDEZT]" duration=832.706973ms
+2022-07-22_23:00:02.94132 level=info ts=2022-07-22T23:00:02.941Z caller=db.go:1293 component=tsdb msg="Deleting obsolete block" block=01G8KA4N5RB8N5DSNXJCGHMMQ3
+2022-07-22_23:00:02.94926 level=info ts=2022-07-22T23:00:02.949Z caller=db.go:1293 component=tsdb msg="Deleting obsolete block" block=01G8KDXTDZM3W61JY67VH0EHTS
+2022-07-22_23:00:02.95669 level=info ts=2022-07-22T23:00:02.956Z caller=db.go:1293 component=tsdb msg="Deleting obsolete block" block=01G8KMFTGQSBC4C5MFPSSBDEZT
+2022-07-23_01:00:01.28204 level=info ts=2022-07-23T01:00:01.281Z caller=compact.go:518 component=tsdb msg="write block" mint=1658527200319 maxt=1658534400000 ulid=01G8M9308QQE3T7D8V35P9PFTH duration=618.413646ms
+2022-07-23_01:00:01.31356 level=info ts=2022-07-23T01:00:01.313Z caller=head.go:800 component=tsdb msg="Head GC completed" duration=27.946828ms
+2022-07-23_03:00:01.41851 level=info ts=2022-07-23T03:00:01.418Z caller=compact.go:518 component=tsdb msg="write block" mint=1658534400319 maxt=1658541600000 ulid=01G8MFYQGQJ42SP111VCH857ZW duration=754.737909ms
+2022-07-23_03:00:01.44752 level=info ts=2022-07-23T03:00:01.447Z caller=head.go:800 component=tsdb msg="Head GC completed" duration=25.413188ms
+2022-07-23_03:00:01.49715 level=info ts=2022-07-23T03:00:01.497Z caller=checkpoint.go:97 component=tsdb msg="Creating checkpoint" from_segment=7 to_segment=8 mint=1658541600000
+2022-07-23_03:00:02.52384 level=info ts=2022-07-23T03:00:02.523Z caller=head.go:969 component=tsdb msg="WAL checkpoint complete" first=7 last=8 duration=1.027020203s
+2022-07-23_05:00:01.15380 level=info ts=2022-07-23T05:00:01.153Z caller=compact.go:518 component=tsdb msg="write block" mint=1658541600319 maxt=1658548800000 ulid=01G8MPTERQBHT9S9Y5RPYZQRVH duration=490.065552ms
+2022-07-23_05:00:01.18579 level=info ts=2022-07-23T05:00:01.185Z caller=head.go:800 component=tsdb msg="Head GC completed" duration=28.875442ms
+2022-07-23_05:00:02.15773 level=info ts=2022-07-23T05:00:02.157Z caller=compact.go:459 component=tsdb msg="compact blocks" count=3 mint=1658512800319 maxt=1658534400000 ulid=01G8MPTFAMQ17WNV3YATHKQTCV sources="[01G8KVBHRQY9QREMXJ756BFMW9 01G8M2790QTYXKVJBSBWTX4E24 01G8M9308QQE3T7D8V35P9PFTH]" duration=921.528121ms
+2022-07-23_05:00:02.16688 level=info ts=2022-07-23T05:00:02.166Z caller=db.go:1293 component=tsdb msg="Deleting obsolete block" block=01G8KVBHRQY9QREMXJ756BFMW9
+2022-07-23_05:00:02.17373 level=info ts=2022-07-23T05:00:02.173Z caller=db.go:1293 component=tsdb msg="Deleting obsolete block" block=01G8M2790QTYXKVJBSBWTX4E24
+2022-07-23_05:00:02.18295 level=info ts=2022-07-23T05:00:02.182Z caller=db.go:1293 component=tsdb msg="Deleting obsolete block" block=01G8M9308QQE3T7D8V35P9PFTH
+2022-07-23_07:00:01.29230 level=info ts=2022-07-23T07:00:01.291Z caller=compact.go:518 component=tsdb msg="write block" mint=1658548800319 maxt=1658556000000 ulid=01G8MXP60R6HNPX97G373N9NT7 duration=627.363708ms
+2022-07-23_07:00:01.32498 level=info ts=2022-07-23T07:00:01.324Z caller=head.go:800 component=tsdb msg="Head GC completed" duration=25.031943ms
+2022-07-23_07:00:01.37552 level=info ts=2022-07-23T07:00:01.375Z caller=checkpoint.go:97 component=tsdb msg="Creating checkpoint" from_segment=9 to_segment=10 mint=1658556000000
+2022-07-23_07:00:02.34896 level=info ts=2022-07-23T07:00:02.348Z caller=head.go:969 component=tsdb msg="WAL checkpoint complete" first=9 last=10 duration=973.587806ms
+2022-07-23_09:00:01.19165 level=info ts=2022-07-23T09:00:01.191Z caller=compact.go:518 component=tsdb msg="write block" mint=1658556000319 maxt=1658563200000 ulid=01G8N4HX8VK3F1XJ6NFCFDYSWM duration=524.010547ms
+2022-07-23_09:00:01.21935 level=info ts=2022-07-23T09:00:01.219Z caller=head.go:800 component=tsdb msg="Head GC completed" duration=24.563337ms
+2022-07-23_09:20:59.99319 level=warn ts=2022-07-23T09:20:59.992Z caller=main.go:672 msg="Received SIGTERM, exiting gracefully..."
+2022-07-23_09:20:59.99323 level=info ts=2022-07-23T09:20:59.993Z caller=main.go:695 msg="Stopping scrape discovery manager..."
+2022-07-23_09:20:59.99323 level=info ts=2022-07-23T09:20:59.993Z caller=main.go:709 msg="Stopping notify discovery manager..."
+2022-07-23_09:20:59.99324 level=info ts=2022-07-23T09:20:59.993Z caller=main.go:731 msg="Stopping scrape manager..."
+2022-07-23_09:20:59.99325 level=info ts=2022-07-23T09:20:59.993Z caller=main.go:691 msg="Scrape discovery manager stopped"
+2022-07-23_09:20:59.99326 level=info ts=2022-07-23T09:20:59.993Z caller=main.go:705 msg="Notify discovery manager stopped"
+2022-07-23_09:20:59.99425 level=info ts=2022-07-23T09:20:59.993Z caller=manager.go:936 component="rule manager" msg="Stopping rule manager..."
+2022-07-23_09:20:59.99426 level=info ts=2022-07-23T09:20:59.994Z caller=manager.go:946 component="rule manager" msg="Rule manager stopped"
+2022-07-23_09:20:59.99427 level=info ts=2022-07-23T09:20:59.994Z caller=main.go:725 msg="Scrape manager stopped"
+2022-07-23_09:21:00.03201 level=info ts=2022-07-23T09:21:00.031Z caller=notifier.go:601 component=notifier msg="Stopping notification manager..."
+2022-07-23_09:21:00.03205 level=info ts=2022-07-23T09:21:00.031Z caller=main.go:906 msg="Notifier manager stopped"
+2022-07-23_09:21:00.03226 level=info ts=2022-07-23T09:21:00.032Z caller=main.go:918 msg="See you next time!"

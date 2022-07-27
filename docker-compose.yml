@@ -1,0 +1,17 @@
+version: "3.3"
+services:
+  gitlab:
+    image: gitlab/gitlab-ce:15.1.3-ce.0
+    container_name: gitlab
+    hostname: "gitlab.local"
+    restart: always
+    ports:
+      - "80:80"
+      - "2222:22"
+      - "443:443"
+    volumes:
+      - ./config:/etc/gitlab
+      - ./logs:/var/log/gitlab
+      - /mnt/data/gitlab/data:/var/opt/gitlab
+      - /etc/docker/certs.d:/etc/ssl/certs/
+      - ./ssl:/etc/gitlab/ssl
